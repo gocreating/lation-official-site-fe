@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import Container from 'react-bootstrap/Container'
-import { GoogleAdSenseHeader, GoogleAdSenseAdUnit, adUnitIdMap } from './GoogleAdSense'
+import { GoogleAdSenseHeader, GoogleAdSenseAdUnit } from './GoogleAdSense'
 import { GoogleAnalyticsHeader } from './GoogleAnalytics'
 import Navigation from './Navigation'
+import { adUnitIdMap } from '../utils/config'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 export const config = { amp: true }
@@ -19,7 +20,7 @@ const AppLayout = ({ children }) => {
       <Navigation />
       {children}
       <Container style={{ marginTop: '2rem' }}>
-        <GoogleAdSenseAdUnit adUnitId={adUnitIdMap.adunit_converter_index_banner} />
+        <GoogleAdSenseAdUnit adUnitId={adUnitIdMap.adunit_official_site_banner} />
       </Container>
     </>
   )
