@@ -5,11 +5,10 @@ import Container from 'react-bootstrap/Container'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
 import Row from 'react-bootstrap/Row'
-import { withTranslation } from '../i18n'
 
-const Products = ({ t, ...rest }) => {
+const Products = ({ t, style }) => {
   return (
-    <Container {...rest}>
+    <Container style={style}>
       <h2>{t('products.title')}</h2>
       <hr />
       <Row>
@@ -24,9 +23,10 @@ const Products = ({ t, ...rest }) => {
                 {t('products.converter.description')}
               </Card.Text>
               <a href="https://converter.lation.app/" target="_blank">
-                <Button variant="secondary">
-                  {t('visit')}{' '}
-                  <FontAwesomeIcon icon={faExternalLinkAlt} />
+                <Button variant="secondary" size="lg" style={{ minWidth: '2rem' }}>
+                  <span>
+                    {t('visit')}{' '}<FontAwesomeIcon icon={faExternalLinkAlt} />
+                  </span>
                 </Button>
               </a>
             </Card.Body>
@@ -38,8 +38,4 @@ const Products = ({ t, ...rest }) => {
   )
 }
 
-Products.getInitialProps = async () => ({
-  namespacesRequired: ['common'],
-})
-
-export default withTranslation('common')(Products)
+export default Products

@@ -13,7 +13,7 @@ const HomePage = ({ t }) => {
           <p>{t('introduction')}</p>
         </Container>
       </Jumbotron>
-      <Products />
+      <Products t={t} />
     </AppLayout>
   )
 }

@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Container from 'react-bootstrap/Container'
 import { GoogleAdSenseHeader, GoogleAdSenseAdUnit, adUnitIdMap } from './GoogleAdSense'
+import { GoogleAnalyticsHeader } from './GoogleAnalytics'
 import Navigation from './Navigation'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -14,6 +15,7 @@ const AppLayout = ({ children }) => {
         <link rel="icon" href="/logo.png" />
       </Head>
       <GoogleAdSenseHeader />
+      <GoogleAnalyticsHeader />
       <Navigation />
       {children}
       <Container style={{ marginTop: '2rem' }}>

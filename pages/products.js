@@ -1,12 +1,20 @@
 import AppLayout from '../components/AppLayout'
 import Products from '../components/Products'
+import { withTranslation } from '../i18n'
 
-const ProductsPage = () => {
+const ProductsPage = ({ t }) => {
   return (
     <AppLayout>
-      <Products style={{ marginTop: '2rem' }} />
+      <Products
+        t={t}
+        style={{ marginTop: '2rem' }}
+      />
     </AppLayout>
   )
 }
 
-export default ProductsPage
+ProductsPage.getInitialProps = async () => ({
+  namespacesRequired: ['common'],
+})
+
+export default withTranslation('common')(ProductsPage)
