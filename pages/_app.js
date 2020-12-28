@@ -1,7 +1,11 @@
-import '../styles/globals.css'
+import App from 'next/app'
+import { appWithTranslation } from '../i18n'
+import '../styles/global.css'
 
-function MyApp({ Component, pageProps }) {
+const LationApp = ({ Component, pageProps }) => {
   return <Component {...pageProps} />
 }
 
-export default MyApp
+LationApp.getInitialProps = async (appContext) => ({ ...await App.getInitialProps(appContext) })
+
+export default appWithTranslation(LationApp)
