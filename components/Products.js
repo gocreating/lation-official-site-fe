@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
 import Row from 'react-bootstrap/Row'
+import { event } from '../utils/gtag'
 
 const Products = ({ t, style }) => {
   return (
@@ -23,10 +24,13 @@ const Products = ({ t, style }) => {
                 {t('products.converter.description')}
               </Card.Text>
               <a href="https://converter.lation.app/" target="_blank">
-                <Button variant="secondary" size="lg" style={{ minWidth: '2rem' }}>
-                  <span>
-                    {t('visit')}{' '}<FontAwesomeIcon icon={faExternalLinkAlt} />
-                  </span>
+                <Button
+                  variant="secondary"
+                  size="lg"
+                  style={{ minWidth: '2rem' }}
+                  onClick={() => event({ action: 'click converter' })}
+                >
+                  {t('visit')}{' '}<FontAwesomeIcon icon={faExternalLinkAlt} />
                 </Button>
               </a>
             </Card.Body>
