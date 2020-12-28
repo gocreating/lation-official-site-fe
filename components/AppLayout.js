@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Container from 'react-bootstrap/Container'
 import { GoogleAdSenseHeader, GoogleAdSenseAdUnit, adUnitIdMap } from './GoogleAdSense'
 import Navigation from './Navigation'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -15,7 +16,9 @@ const AppLayout = ({ children }) => {
       <GoogleAdSenseHeader />
       <Navigation />
       {children}
-      <GoogleAdSenseAdUnit adUnitId={adUnitIdMap.adunit_converter_index_banner} />
+      <Container style={{ marginTop: '2rem' }}>
+        <GoogleAdSenseAdUnit adUnitId={adUnitIdMap.adunit_converter_index_banner} />
+      </Container>
     </>
   )
 }
