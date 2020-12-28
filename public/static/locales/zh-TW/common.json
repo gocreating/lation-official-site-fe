@@ -1,3 +1,14 @@
 {
-  "introduction": "專為懶惰的你打造的自動化平台"
+  "navbar": {
+    "products": "產品"
+  },
+  "introduction": "專為懶惰的你打造的自動化平台",
+  "products": {
+    "title": "產品",
+    "converter": {
+      "title": "線上轉換平台",
+      "description": "擁有全台最完善的成人轉換服務，24小時在線等候，免費使用"
+    }
+  },
+  "visit": "瀏覽"
 }

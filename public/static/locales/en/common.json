@@ -1,3 +1,14 @@
 {
-  "introduction": "An automation platform designed for you lazy guys."
+  "navbar": {
+    "products": "Products"
+  },
+  "introduction": "An automation platform designed for you lazy guys.",
+  "products": {
+    "title": "Products",
+    "converter": {
+      "title": "Online Converter",
+      "description": "The most complete online coverter ever. Host 24/7 online and free."
+    }
+  },
+  "visit": "Visit"
 }
