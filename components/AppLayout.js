@@ -23,7 +23,7 @@ const AppLayout = ({ children }) => {
       <GoogleAnalyticsHeader />
       <Navigation />
       {children}
-      <Container style={{ marginTop: '2rem' }}>
+      <Container style={{ marginTop: '2rem', marginBottom: '2rem', overflow: 'auto' }}>
         <GoogleAdSenseAdUnit adUnitId={adUnitIdMap.adunit_official_site_banner} />
       </Container>
       <FacebookMessengerChatPlugin />
