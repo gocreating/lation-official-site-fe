@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Container from 'react-bootstrap/Container'
-import Chatfuel from './Chatfuel'
+import { FacebookMessengerHeader, FacebookMessengerChatPlugin } from './FacebookMessenger'
 import { GoogleAdSenseHeader, GoogleAdSenseAdUnit } from './GoogleAdSense'
 import { GoogleAnalyticsHeader } from './GoogleAnalytics'
 import Navigation from './Navigation'
@@ -18,6 +18,7 @@ const AppLayout = ({ children }) => {
         <link href="/fontawesome-free-5.15.1-web/css/fontawesome.min.css" rel="stylesheet" />
         <link href="/fontawesome-free-5.15.1-web/css/solid.min.css" rel="stylesheet" />
       </Head>
+      <FacebookMessengerHeader />
       <GoogleAdSenseHeader />
       <GoogleAnalyticsHeader />
       <Navigation />
@@ -25,7 +26,7 @@ const AppLayout = ({ children }) => {
       <Container style={{ marginTop: '2rem' }}>
         <GoogleAdSenseAdUnit adUnitId={adUnitIdMap.adunit_official_site_banner} />
       </Container>
-      <Chatfuel />
+      <FacebookMessengerChatPlugin />
     </>
   )
 }
