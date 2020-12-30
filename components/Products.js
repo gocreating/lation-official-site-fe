@@ -2,8 +2,6 @@ import Button from 'react-bootstrap/Button'
 import Card from 'react-bootstrap/Card'
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
 import Row from 'react-bootstrap/Row'
 import { event } from '../utils/gtag'
 
@@ -30,7 +28,7 @@ const Products = ({ t, style }) => {
                   style={{ minWidth: '2rem' }}
                   onClick={() => event({ action: 'click converter' })}
                 >
-                  {t('visit')}{' '}<FontAwesomeIcon icon={faExternalLinkAlt} />
+                  {t('visit')}{' '}<i className="fas fa-external-link-alt" />
                 </Button>
               </a>
             </Card.Body>

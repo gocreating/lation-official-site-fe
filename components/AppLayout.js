@@ -14,6 +14,8 @@ const AppLayout = ({ children }) => {
       <Head>
         <title>Lation</title>
         <link rel="icon" href="/logo.png" />
+        <link href="/fontawesome-free-5.15.1-web/css/fontawesome.min.css" rel="stylesheet" />
+        <link href="/fontawesome-free-5.15.1-web/css/solid.min.css" rel="stylesheet" />
       </Head>
       <GoogleAdSenseHeader />
       <GoogleAnalyticsHeader />

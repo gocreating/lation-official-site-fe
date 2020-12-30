@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGlobe } from '@fortawesome/free-solid-svg-icons'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import { i18n, withTranslation, Link } from '../i18n'
@@ -27,7 +25,7 @@ const Navigation = ({ t }) => {
         </Nav>
         <Nav>
           <Navbar.Text>
-            <FontAwesomeIcon icon={faGlobe} />
+            <i className="fas fa-globe" />
           </Navbar.Text>
           <Nav.Link onClick={() => i18n.changeLanguage('en')}>English</Nav.Link>
           <Nav.Link onClick={() => i18n.changeLanguage('zh-TW')}>中文</Nav.Link>
