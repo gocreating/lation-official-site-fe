@@ -22,6 +22,9 @@ const Navigation = ({ t }) => {
           <Link href="/products" passHref>
             <Nav.Link>{t('navbar.products')}</Nav.Link>
           </Link>
+          <Link href="/support" passHref>
+            <Nav.Link>{t('navbar.support')}</Nav.Link>
+          </Link>
         </Nav>
         <Nav>
           <Navbar.Text>

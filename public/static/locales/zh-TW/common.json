@@ -1,6 +1,7 @@
 {
   "navbar": {
-    "products": "產品"
+    "products": "產品",
+    "support": "支援"
   },
   "introduction": "專為懶惰的你打造的自動化平台",
   "products": {
@@ -9,6 +10,10 @@
       "title": "線上轉換平台",
       "description": "擁有全台最完善的轉換服務，24小時在線等候，免費使用"
     }
+  },
+  "support": {
+    "title": "支援",
+    "description": "請透過以下信箱提供我們意見回饋：<a href=\"mailto:{{email}}\">{{email}}</a>"
   },
   "404": {
     "title": "404",

@@ -1,6 +1,7 @@
 {
   "navbar": {
-    "products": "Products"
+    "products": "Products",
+    "support": "Support"
   },
   "introduction": "An automation platform designed for you lazy guys.",
   "products": {
@@ -9,6 +10,10 @@
       "title": "Online Converter",
       "description": "The most complete online coverter ever. Host 24/7 online and free."
     }
+  },
+  "support": {
+    "title": "Support",
+    "description": "Please give us feedback through the following email: <a href=\"mailto:{{email}}\">{{email}}</a>"
   },
   "404": {
     "title": "404",
