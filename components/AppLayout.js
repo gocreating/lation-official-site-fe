@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Container from 'react-bootstrap/Container'
-import { FacebookMessengerChatPlugin } from './FacebookMessenger'
+import { FacebookMessengerHeader, FacebookMessengerChatPlugin } from './FacebookMessenger'
 import { GoogleAdSenseAdUnit } from './GoogleAdSense'
 import Navigation from './Navigation'
 import { adUnitIdMap } from '../utils/config'
@@ -15,6 +15,7 @@ const AppLayout = ({ children }) => {
         <title>Lation</title>
         <link rel="icon" href="/logo.png" />
       </Head>
+      <FacebookMessengerHeader />
       <Navigation />
       {children}
       <Container style={{ marginTop: '2rem', marginBottom: '2rem', overflow: 'auto' }}>
