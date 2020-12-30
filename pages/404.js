@@ -6,7 +6,7 @@ import { withTranslation } from '../i18n'
 
 const NotFoundPage = ({ t }) => {
   return (
-    <AppLayout>
+    <AppLayout title={t('404.title')}>
       <Jumbotron>
         <Container>
           <h1>{t('404.title')}</h1>

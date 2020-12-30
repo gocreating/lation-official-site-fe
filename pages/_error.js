@@ -6,7 +6,7 @@ import { withTranslation } from '../i18n'
 
 const ErrorPage = ({ t }) => {
   return (
-    <AppLayout>
+    <AppLayout title={t('error.title')}>
       <Jumbotron>
         <Container>
           <h1>{t('error.title')}</h1>
