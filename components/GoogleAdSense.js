@@ -1,15 +1,13 @@
 import { useEffect } from 'react'
-import Head from 'next/head'
 import { adUnitIdMap, ADSENSE_CLIENT_ID } from '../utils/config'
 
 export const GoogleAdSenseHeader = () => {
   return (
-    <Head>
-      <script
-        data-ad-client={ADSENSE_CLIENT_ID}
-        async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
-    </Head>
+    <script
+      data-ad-client={ADSENSE_CLIENT_ID}
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    />
   )
 }
 
