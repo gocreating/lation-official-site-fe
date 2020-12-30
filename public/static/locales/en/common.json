@@ -10,5 +10,13 @@
       "description": "The most complete online coverter ever. Host 24/7 online and free."
     }
   },
+  "404": {
+    "title": "404",
+    "description": "This page could not be found."
+  },
+  "error": {
+    "title": "Error",
+    "description": "Something weng wrong."
+  },
   "visit": "Visit"
 }
