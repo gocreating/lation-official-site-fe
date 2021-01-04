@@ -34,7 +34,29 @@ const Products = ({ t, style }) => {
             </Card.Body>
           </Card>
         </Col>
-        <Col md={6} />
+        <Col md={6}>
+        <Card>
+          <Card.Img variant="top" src="/static/images/product-stock.png" />
+            <Card.Body>
+              <Card.Title>
+                {t('products.stock.title')}
+              </Card.Title>
+              <Card.Text>
+                {t('products.stock.description')}
+              </Card.Text>
+              <a href="https://stock.lation.app/" target="_blank">
+                <Button
+                  variant="secondary"
+                  size="lg"
+                  style={{ minWidth: '2rem' }}
+                  onClick={() => event({ action: 'click stock' })}
+                >
+                  {t('visit')}{' '}<i className="fas fa-external-link-alt" />
+                </Button>
+              </a>
+            </Card.Body>
+          </Card>
+        </Col>
       </Row>
     </Container>
   )

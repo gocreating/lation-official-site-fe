@@ -9,6 +9,10 @@
     "converter": {
       "title": "Online Converter",
       "description": "The most complete online coverter ever. Host 24/7 online and free."
+    },
+    "stock": {
+      "title": "Stock Wizard",
+      "description": "A stock wizard for Taiwan market, automating your routine stock operation."
     }
   },
   "support": {
