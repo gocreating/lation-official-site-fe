@@ -16,6 +16,15 @@ const SupportPage = ({ t }) => {
             components={{ a: <a /> }}
           />
         </p>
+        <h1>{t('status.title')}</h1>
+        <p>
+          <Trans
+            t={t}
+            i18nKey="status.description"
+            values={{ href: 'https://status.lation.app' }}
+            components={{ a: <a /> }}
+          />
+        </p>
       </Container>
     </AppLayout>
   )

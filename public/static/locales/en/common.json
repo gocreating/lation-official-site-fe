@@ -19,6 +19,10 @@
     "title": "Support",
     "description": "Please give us feedback through the following email: <a href=\"mailto:{{email}}\">{{email}}</a>"
   },
+  "status": {
+    "title": "Service Status",
+    "description": "Please see <a href=\"{{href}}\" target=\"_blank\">Service Status Overview</a>"
+  },
   "404": {
     "title": "404",
     "description": "This page could not be found."

@@ -19,6 +19,10 @@
     "title": "支援",
     "description": "請透過以下信箱提供我們意見回饋：<a href=\"mailto:{{email}}\">{{email}}</a>"
   },
+  "status": {
+    "title": "服務狀態",
+    "description": "請見<a href=\"{{href}}\" target=\"_blank\">產品服務狀態總覽</a>"
+  },
   "404": {
     "title": "404",
     "description": "找不到頁面"
