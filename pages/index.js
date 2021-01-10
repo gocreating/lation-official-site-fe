@@ -9,8 +9,8 @@ const HomePage = ({ t }) => {
     <AppLayout>
       <Jumbotron>
         <Container>
-          <h1>Lation</h1>
-          <p>{t('introduction')}</p>
+          <h1>{t('site.title')}</h1>
+          <p>{t('site.description')}</p>
         </Container>
       </Jumbotron>
       <Products t={t} />

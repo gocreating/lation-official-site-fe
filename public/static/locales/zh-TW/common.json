@@ -1,9 +1,12 @@
 {
+  "site": {
+    "title": "Lation",
+    "description": "專為懶惰的你打造的自動化平台"
+  },
   "navbar": {
     "products": "產品",
     "support": "支援"
   },
-  "introduction": "專為懶惰的你打造的自動化平台",
   "products": {
     "title": "產品",
     "converter": {

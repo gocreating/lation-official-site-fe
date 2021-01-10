@@ -1,9 +1,12 @@
 {
+  "site": {
+    "title": "Lation",
+    "description": "An automation platform designed for you lazy guys"
+  },
   "navbar": {
     "products": "Products",
     "support": "Support"
   },
-  "introduction": "An automation platform designed for you lazy guys.",
   "products": {
     "title": "Products",
     "converter": {
