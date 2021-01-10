@@ -17,8 +17,8 @@ const AppLayout = ({ t, children }) => {
       <Head>
         <title>{t('site.title')}</title>
         <link rel="icon" href="/logo.png" />
-        <link rel="alternate" href="https://lation.app/en" hreflang="en" />
-        <link rel="alternate" href="https://lation.app/zh-TW" hreflang="zh-tw" />
+        <link rel="alternate" href="https://lation.app/en" hrefLang="en" />
+        <link rel="alternate" href="https://lation.app/zh-TW" hrefLang="zh-tw" />
       </Head>
       <NextSeo
         title={t('site.title')}
