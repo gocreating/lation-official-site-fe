@@ -1,7 +1,8 @@
 {
   "site": {
     "title": "Lation",
-    "description": "專為懶惰的你打造的自動化平台"
+    "description": "專為懶惰的你打造的自動化平台",
+    "keywords": "懶人,生活,自動化,工作站,懶人自動化,懶人工作站,生活自動化,生活工作站"
   },
   "navbar": {
     "products": "產品",
@@ -10,8 +11,8 @@
   "products": {
     "title": "產品",
     "converter": {
-      "title": "線上轉換平台",
-      "description": "擁有全台最完善的轉換服務，24小時在線等候，免費使用"
+      "title": "免費線上轉換服務",
+      "description": "史上最方便的免費線上轉換服務"
     },
     "stock": {
       "title": "股票精靈",

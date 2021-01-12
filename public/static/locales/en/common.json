@@ -1,7 +1,8 @@
 {
   "site": {
     "title": "Lation",
-    "description": "An automation platform designed for you lazy guys"
+    "description": "An automation platform designed for you lazy guys",
+    "keywords": "Lazy,Life,Automation,Station,Lazy Automation,Lazy Station,Life Automation,Life Station"
   },
   "navbar": {
     "products": "Products",
@@ -10,8 +11,8 @@
   "products": {
     "title": "Products",
     "converter": {
-      "title": "Online Converter",
-      "description": "The most complete online coverter ever. Host 24/7 online and free."
+      "title": "Free Online Converter",
+      "description": "The most handy online converter ever for free."
     },
     "stock": {
       "title": "Stock Wizard",
