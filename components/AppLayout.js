@@ -1,4 +1,4 @@
-// import { NextSeo } from 'next-seo'
+import { NextSeo } from 'next-seo'
 import Head from 'next/head'
 import Container from 'react-bootstrap/Container'
 import { FacebookMessengerHeader, FacebookMessengerChatPlugin } from './FacebookMessenger'
@@ -20,10 +20,10 @@ const AppLayout = ({ t, children }) => {
         <link rel="alternate" href="https://lation.app/en" hrefLang="en" />
         <link rel="alternate" href="https://lation.app/zh-TW" hrefLang="zh-tw" />
       </Head>
-      {/* <NextSeo
+      <NextSeo
         title={t('site.title')}
         description={t('site.description')}
-      /> */}
+      />
       <GoogleAnalyticsHeader />
       <FacebookMessengerHeader />
       <Navigation />
