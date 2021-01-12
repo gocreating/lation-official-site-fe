@@ -1,4 +1,4 @@
-import { NextSeo, RecipeJsonLd } from 'next-seo'
+import { NextSeo, ProductJsonLd } from 'next-seo'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import Container from 'react-bootstrap/Container'
@@ -31,14 +31,18 @@ const AppLayout = ({ t, children }) => {
           href: `https://lation.app/zh-TW${router.pathname}`,
         }]}
       />
-      <RecipeJsonLd
-        name={t('site.title')}
+      <ProductJsonLd
+        productName={t('site.title')}
         description={t('site.description')}
-        authorName="Lation"
+        brand="Lation"
         images={['https://lation.app/logo.png']}
-        ingredients={[]}
-        instructions={[]}
         keywords={t('site.keywords')}
+        offers={[]}
+        reviews={[]}
+        aggregateRating={{
+          ratingValue: '5',
+          reviewCount: '1',
+        }}
       />
       <GoogleAnalyticsHeader />
       <FacebookMessengerHeader />
